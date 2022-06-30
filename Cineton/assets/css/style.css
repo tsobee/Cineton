@@ -1,0 +1,668 @@
+@font-face {
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-family: "Roboto";
+  }
+@font-face {
+    src: url("../fonts/PermanentMarker-Regular.ttf");
+    font-family: "PermanentMarker";
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+  } 
+  a {
+    color: #141414;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+    color: #141414;
+  }
+ul {
+    list-style: none;
+    margin: 0px !important;
+  }
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+  } 
+#login {
+    padding: 8px 0px;
+    background-color: #ffd247;
+  } 
+  /* Header */
+#login .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  } 
+#login .wrapper ul {
+    display: flex;
+    align-items: center;
+  } 
+#login .wrapper ul label {
+    display: flex;
+    align-items: center;
+  } 
+.btnLogin {
+    padding: 1px 10px;
+    display: block;
+  }  
+#btnRegister {
+    border-left: 1px solid #141414;
+  }
+#header {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: .2s background-color;
+  } 
+#logoAndNav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  } 
+#navigation {
+    display: flex;
+    align-items: center;
+  } 
+#nav ul {
+    display: flex;
+  } 
+#nav ul li a {
+    color: #fff;
+    padding: 10px;
+    transition: .1s;
+    font-size: 25px;
+  } 
+#nav ul li a:hover {
+    color: #ffd247;
+  } 
+.active {
+    color: #ffd247 !important;
+  } 
+  #hamburger {
+    display: none;
+  }
+  #hamburger a i {
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+  }
+  #sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  } 
+  #sideNavContent {
+    width: 360px;
+    background-color: #141414;
+    overflow-y: auto;
+  } 
+  #sideNavContent ul li a {
+    display: block;
+    padding: 20px;
+    transition: .1s;
+    color: #ffd247;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #sideNavContent ul li a:hover {
+    color: #fff;
+  }
+  .cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+/* Footer */
+#footer {
+    background-color: #141414;
+    padding: 30px 0;
+  } 
+  #footer .wrapper {
+    display: flex;
+    justify-content: space-around;
+  } 
+  #footer a {
+    color: #fff;
+    transition: .1s color;
+    font-size: 20px;
+  }  
+  #footer a i, #footer a span {
+    color: #fff;
+    transition: .1s;
+    margin-top: 10px;
+  } 
+  #footer a:hover {
+    color: #ffd247;
+  }
+  #footer a:hover i, #footer a:hover span {
+    color: #ffd247;
+  } 
+  #footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #links ul li{
+    margin-top: 10px;
+  }
+  .socialText {
+    margin-left: 4px;
+  }  
+  #copyright {
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+  }
+  /* About us */
+  #aboutUs{
+    width: 100%;
+    text-align: justify;
+    margin: 80px 0px;
+  }
+  #txt{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    color: #141414;
+}
+#txt .txt{
+    width: 35%;
+    font-size: 20px;  
+}
+#txt .txt h2{
+    width: 45%;
+    margin-bottom: 20px;
+}
+/* Pricelist */
+#cenovnik{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+table{
+    width: 70%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+table tr{
+    font-size: 20px;
+}
+table tr td{
+    padding: 10px;
+}
+table tr th{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #141414;
+    color: #fff;
+}
+tr:nth-child(even),tr:nth-child(even) a{
+    background-color: #ffd247;
+    color: #141414;
+    text-align: left;
+}
+tr:nth-child(odd),tr:nth-child(odd) a{
+    background-color: #fff;
+    color: #141414;
+    text-align: left;
+}
+tr:nth-child(odd) a{
+    background-color: #ffd247;
+    color: #ffd247;
+}
+table a{
+    text-decoration: none;
+}
+/* Bg */
+#baner{
+    background-image: url("../img/bg2.jpg");
+    min-height:700px;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position: center;
+    }
+    #tekst1{
+    color:#ffd247;
+    padding-top:8rem;
+    text-align: center;
+    }
+    #tekst1 p{
+    font-family: "PermanentMarker";
+    font-size: 50px;
+    }
+/* On repertoire */
+#naRepertoaru{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    padding: 55px 0px;
+    text-align: right;
+}
+.sledece{
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.datumSledece{
+    color: #141414;
+    font-weight: bold;
+    font-size: 15px;
+}
+.slikaSledece{
+    width: 70%;
+    border: 2px solid #ffd247;
+}
+.sledece h2,h3,p{
+    margin-bottom: 20px;
+}
+#sledeceNaslov{
+    color: #141414;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sledece h2{
+    color: #141414;
+    font-weight: bold;
+    font-size: 35px;
+}
+.sledece div{
+    margin-bottom: 15px;
+}
+.sledece a{
+    background-color: #141414;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffd247;
+}
+.naslov{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px;
+}
+.naslovTxt{
+    text-align: center;
+    color: #141414;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.slikaMovie{
+    width: 50%;
+    margin: 0px auto;
+}
+.details{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "PermanentMarker";
+    color: #141414;
+    padding: 10px;
+    background-color: #ffd247;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    border: 0px solid rgba(0, 0, 0, 0.125);
+}
+.contactUs{
+    text-align:center;
+    padding:2rem;
+    }
+    .contact-us input {
+    border-radius: 3px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #4a4a4a;
+    background-color: #f4f4f4;
+    outline: none!important;
+    border: none;
+    box-shadow: none;
+    line-height: 44px;
+    height: 44px;
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    .contact-us textarea {
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #4a4a4a;
+    background-color: #f4f4f4;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    height: 122px;
+    max-height: 220px;
+    width: 100%;
+    margin-bottom: 25px;
+    }
+    .contact-us button {
+    width: 100%;
+    display: inline-block;
+    background-color: #141414;
+    color: #fff!important;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    }
+    .msg{
+    font-weight: bold;
+    margin-bottom: 5%;
+    }
+    #formcheck{
+    color: #006622;
+    display:none;
+    padding:2rem;
+    }
+.anketa{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #141414;
+}
+#odg{
+    display: flex;
+    justify-content: center;
+}
+.odg{
+    display: inline;
+    margin-right: 25px;
+    color: #141414;
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -4px;
+    left: -8px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #141414;
+}
+input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -4px;
+    left: -8px;
+    position: relative;
+    background-color: #ffd247;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #141414;
+}
+#btnAnketa{
+    background-color: #141414;
+    color: #ffd247;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+#poruka{
+    color: #141414;
+    margin-top: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* One movie */
+#filmovi{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.jedan{
+    padding: 30px 0px;
+}
+#filmTekst{
+    width: 60%;
+    text-align: justify;
+}
+#filmTekst h1{
+    margin-bottom: 15px;
+}
+#filmTekst p,.tekst p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.moviesAll{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.movieOne{
+    flex: 1 0 33%;
+    flex-grow: 0;
+}
+.loginTekst{
+    font-size: 13px;
+    font-weight: bold;
+    color: #141414;
+    font-family: "PermanentMarker";
+}   
+/* Repertoire */
+#repertoar{
+    width: 60%;
+    margin: 0px auto;
+    min-height: 150px;
+    
+}
+.repertoar{
+    border: 1px solid #141414;
+    background-color: #ffd247;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    padding-right: 20px;
+}
+.repertoar .datum{
+    padding: 20px;
+    background-color: #141414;
+    color: #fff;
+}
+.repertoar a{
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+    font-family: "PermanentMarker";
+}
+#search{
+    width: 80%;
+    margin-left: 10px;
+    text-align: left;
+}
+.hgh{
+    min-height: 260px;
+}
+#search input{
+    padding: 5px;
+    width: 250px;
+    border: 3px solid #141414;
+    border-radius: 20px ;
+}
+#stranicenje{
+    padding: 30px;
+    text-align: center;
+}
+#stranicenje a,#stranicenje span{
+    color: #141414;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#stranicenje .aktivanLink{
+    color: #ffd247;
+}
+/* Reservation */
+#rezervacija{
+    display: flex;
+    justify-content: center;
+}
+.rezText{
+    font-size: 17px;
+    margin-top: 18px;
+}
+.brd{
+    border: 2px solid #141414;
+    border-radius: 5px;
+}
+/* Admin */
+.adminHeader > .wrapper {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.adminHeader > .wrapper #hamburger {
+    display: block;
+}
+#adminNav ul {
+    display: flex;
+}
+#adminNav ul li a {
+    padding: 10px;
+    color: #fff;
+    transition: .2s;
+}
+#adminNav ul li a:hover {
+  color: #ffd247;
+}
+
+/* Responsive */
+@media screen and (max-width: 1470px) {
+  .auPic{
+    width: 150%;
+  }
+  #txt .txt{
+      width: 35%;
+      font-size: 15px;  
+  }
+  #txt .txt h2{
+      width: 45%;
+      margin-bottom: 20px;
+  }
+  .sledece{
+    width: 40%;
+}
+}
+@media screen and (max-width: 1180px) {
+  .auPic{
+    width: 100%;
+  }
+  #txt .txt{
+      width: 100%;
+      font-size: 20px;  
+      margin-top: 30px;
+  }
+  #txt .txt h2{
+      width: 45%;
+      margin-bottom: 20px;
+  }
+  .sledece{
+    width: 50%;
+}
+}
+@media screen and (max-width: 750px) {
+  .sledece{
+    width: 100%;
+    display: block;
+}
+.oneMpic{
+  display: none;
+}
+
+#filmTekst{
+  width: 100%;
+  text-align: justify;
+}
+#nav {
+  display: none;
+}
+#hamburger {
+  display: block;
+}
+.moviesAll{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.movieOne{
+  flex: 1 0 50% !important;
+  flex-grow: 0 !important;
+}
+}
+@media screen and (max-width: 576px) {
+
+  #footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer ul {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  #footer ul li a {
+    padding: 5px;
+  }
+  .socialText {
+    display: none;
+  }
+
+  #txt .txt{
+    width: 100%;
+    font-size: 17px;  
+    margin-top: 30px;
+}
+.rezText{
+  font-size: 10px;
+  margin-top: 18px;
+}
+.movieOne{
+  flex: 1 0 100% !important;
+  flex-grow: 0 !important;
+}
+}
+@media screen and (max-width: 400px) {
+
+  #txt .txt{
+    font-size: 14px;  
+
+}
+}
+
+
